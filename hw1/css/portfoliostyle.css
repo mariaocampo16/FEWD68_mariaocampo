@@ -1,0 +1,50 @@
+/*
+This is my code for my Portfolio */
+
+a {
+	color:lightyellow;
+	font-size:20px;
+	text-align: center;
+	font-family: helvetica;
+}
+h1 {
+	text-align: center;
+	font-family: helvetica;
+}
+h2 {
+	text-align:center;
+	font-family: helvetica;
+	font-size: 22px;
+}
+p {
+	font-family: helvetica;
+}
+.img {
+	text-align:center;
+}
+.joke {
+	text-align: center;
+	font-size:16px;
+}
+ul {
+	font-family: helvetica;
+	font-size: 14px;
+}
+li {
+	font-family: helvetica;
+	font-size: 13px;
+}
+.img1comment {
+	text-align: left;
+}
+.emphasis {
+	font-style: italic;
+}
+h3 {
+	text-align:center;
+	font-family: helvetica;
+	font-size: 22px;
+}
+body {
+	background:lightgrey;
+}
