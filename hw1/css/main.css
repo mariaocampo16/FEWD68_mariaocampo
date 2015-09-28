@@ -2,31 +2,80 @@
 This is my css code for my About me */
 a {
 	color:white;
-	font-size:20px;
+	font-size:19px;
 	text-align: center;
 	font-family: helvetica;
+	padding: 9px;
+}
+a:hover {
+	color: blue;
+}
+.a2 {
+	text-decoration: overline;
 }
 h1 {
 	color:navy;
+	background: white;
 	font-size:30px;
 	text-align: center;
 	font-family:helvetica;
+	border: 2px solid navy; 
+	padding: 15px;
 }
-h2 {
-	font-family: helvetica;
-	text-align: center;
+h1:first-letter{
+	color: pink;
 }
+.contain {
+	max-height: 300px;
+	text-align:center;
+}
+.img1{
+	position:relative;
+	display: inline-block;
+	float:left;
+	padding: 5px;
+}
+.img2 {
+	position:relative;
+	display: inline-block;
+	float: center;
+	padding: 5px;
+}
+.img3 {
+	position:relative;
+	display: inline-block;
+	float: right;
+	padding: 5px;
+}
+.body{ 
+	clear: right;
+	padding: 10px;}
+
+.clearfix {
+	overflow: auto;
+}
+
 ol {
 	font-family: helvetica;
 	color:white;
 	font-size: 20px;
+	text-decoration:underline;
+	padding: 15px;
 }
 li{
+	list-style-type: none;
 	color:lightyellow;
 	vertical-align: baseline;
 	font-family: helvetica;
 	font-size: 17px;
+	padding: 5px;
 }
+li:before {
+	content: url("assets/star.png");
+}
+
 body{
-	background-color:lightblue; 
+	background-color:lightblue;
+	border: navy;
+	padding: 25px;
 }
