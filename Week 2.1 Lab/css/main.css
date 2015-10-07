@@ -1,0 +1,34 @@
+*{box-sizing: border-box}
+
+body {
+  margin: 0 auto;
+  width: 980px;
+}
+nav {
+height: 100px;
+width: 100%;
+background: pink;
+position: relative;
+}
+.left{
+  height:500px;
+  width:75%;
+  padding:1px;
+  background: red;
+  float:left;
+}
+.side_content{
+  height:500px;
+  width:25%;
+  background: yellow;
+  float:left;
+}
+.clearfix{
+  overflow:auto;
+}
+footer {
+  background: blue;
+  position:relative;
+  border: solid black 1px;
+  height: 80px;
+  width:100%;}
