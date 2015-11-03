@@ -1,0 +1,268 @@
+/*
+Project Name: Startup Matchmaker Lab
+Author: Maria Ocampo
+*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+#container {
+  width: 100%;
+  margin:auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  clear: both;
+}
+
+header {
+  background-color: black;
+  padding: 5px;
+  width: 100%;
+  color: white;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  color:yellow;
+  margin-left: 25px;
+  font-weight:700;
+  font-size: 40px;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+ nav ul {
+  margin-left:30%;
+ }
+
+nav ul li {
+  display: inline-block;
+  font-size:20px;
+  padding: 7px;
+}
+
+.bold {
+  font-weight: 700;
+  font-size:18px;
+}
+
+/* yellow line division */
+.yellowline {
+  border-style:solid;
+  border-bottom: thick solid;
+  border-width: 4px;
+  border-color:yellow;
+  /*margin:0px;*/
+  width: 100%;
+}
+
+/* start brains div */
+.brains {
+  background-color: #C0C0C0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+  font-size: 22px;
+  font-family: 'Merriweather', serif;
+}
+
+.brains .taste {
+    text-decoration:line-through;
+    color:grey;
+}
+
+.brains .are {
+  border-bottom: solid 2px;
+  border-bottom-color: yellow;
+}
+
+/* end brains div */
+
+/* start main div */
+
+.mainpic {
+  background-image: url("../images/coworking.jpg");
+  padding: 100px 70px 150px 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 500px;
+}
+
+.picoverlay{
+  padding: 2%;
+  background-color: rgba(255,255,255,.7);
+  width: 25%;
+  position: relative;
+  left: 75%;
+  /*margin-left: 30%;*/
+  /*display: inline-block;*/
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.imgtext{
+  font-size: 15px;
+  padding: 1%;
+  width: 100%;
+}
+
+#button1 {
+  background-color:yellow;
+  margin-left: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  width: 100%;
+}
+/* end main div */
+
+/* start bottom div */
+
+#bottom {
+  width: 100%;
+}
+
+#bottom div {
+  float: left;
+  padding:10px;
+  width:33.3%;
+  background: #F5F5F5;
+  text-align: left;
+  border-right:1px solid black;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size:17px;
+  font-weight: 700;
+  text-align: left;
+}
+
+#bottom p {
+  padding:5px;
+  max-width:100%;
+}
+
+
+#bottom button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  background-color:grey;
+  margin-left:28%;
+  padding:5px;
+  border-radius: 5px;
+}
+
+/* end bottom div */
+
+
+footer{
+  clear:both;
+  background: black;
+  color:white;
+  padding: 15px;
+  width: 100%;
+}
+
+/*begin media query for tablet size */
+
+@media (min-width: 650px) and (max-width: 950px) {
+  h1 {
+    display: inline-block;
+    text-align: center;
+    margin-left: 0px;
+  }
+  nav ul {
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .picoverlay {
+    left: 60%;
+    width: 40%;
+  }
+
+  .imgtext {
+    font-size: 14px;
+  }
+
+  #bottom button {
+    margin-left: 10%;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+
+  #bottom p {
+    font-size:14px;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+/*end media query for tablet size */
+
+/*begin media query for mobile size */
+
+@media (min-width: 350px) and (max-width: 650px) {
+  header {
+    padding: 1%;
+  }
+
+  h1 {
+    display: inline-block;
+    text-align: center;
+    font-size:30px;
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  nav ul {
+    padding: 0px;
+    margin-left:0px;
+    text-align: center;
+  }
+  .bold {
+    font-size: 15px;
+  }
+  nav ul li {
+    font-size: 15px;
+  }
+
+
+  .brains {
+    font-size: 18px;
+  }
+
+  .picoverlay {
+    left: 60%;
+    width: 50%;
+  }
+
+  .imgtext {
+    font-size: 13px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+}
